@@ -1,0 +1,20 @@
+{
+    // Build and run the ASP.NET Core Web API project
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-api",
+            "type": "shell",
+            "command": "dotnet build ./api",
+            "group": "build",
+            "problemMatcher": ["$msCompile"]
+        },
+        {
+            "label": "run-api",
+            "type": "shell",
+            "command": "dotnet run --project ./api",
+            "group": "test",
+            "isBackground": true
+        }
+    ]
+}
