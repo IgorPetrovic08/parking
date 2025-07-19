@@ -1,5 +1,17 @@
 @api_HostAddress = http://localhost:5193
 
+
 ###
-GET {{api_HostAddress}}/hello
+POST  {{api_HostAddress}}/register
+Accept: application/json
+Content-Type: application/json
+
+{
+  "registrationPlates": "AB123CD",
+  "cityId": 1,
+  "zoneId": 2
+}
+
+###
+GET {{api_HostAddress}}/registrations/AB123CD
 Accept: application/json
